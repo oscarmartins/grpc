@@ -6,5 +6,5 @@ message Message {
 }
 
 service ChatService {
-    rpc SayHello (Message) returns (Message) {};
+    rpc SayHello (Message) returns (Message) {}
 }

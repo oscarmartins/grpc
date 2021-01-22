@@ -1,12 +1,11 @@
 package main
 
 import (
+	"context"
 	"log"
 
-	"golang.org/x/net/context"
-	"google.golang.org/grpc"
-
 	"github.com/oscarmartins/grpc/chat"
+	"google.golang.org/grpc"
 )
 
 func main() {
