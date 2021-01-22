@@ -1,16 +1,17 @@
 package main
 
 import (
-	"context"
 	"log"
 
-	"github.com/oscarmartins/grpc/chat"
+	"golang.org/x/net/context"
 	"google.golang.org/grpc"
+
+	"github.com/oscarmartins/grpc/chat"
 )
 
 func main() {
 	var conn *grpc.ClientConn
-	conn, err := grpc.Dial(":9080", grpc.WithInsecure())
+	conn, err := grpc.Dial(":9000", grpc.WithInsecure())
 	if err != nil {
 		log.Fatalf("could not connect: %s", err)
 	}

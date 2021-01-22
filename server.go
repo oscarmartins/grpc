@@ -9,9 +9,9 @@ import (
 )
 
 func main() {
-	lis, err := net.Listen("tcp", ":9080")
+	lis, err := net.Listen("tcp", ":9000")
 	if err != nil {
-		log.Fatalf("Failed to listen on port 9080: %v", err)
+		log.Fatalf("Failed to listen on port 9000: %v", err)
 	}
 
 	s := chat.Server{}
